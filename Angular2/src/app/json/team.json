@@ -1,0 +1,89 @@
+﻿{
+  "records": [
+    {
+      "name": "Ravi",
+      "city": "Hyderabad",
+      "country": "India",
+      "imageUrl": "../../images/img1.jpg",
+      "designation": "AVP"
+    },
+    {
+      "name": "Roopesh",
+      "city": "Hyderabad",
+      "country": "India",
+      "imageUrl": "../../images/img2.jpg",
+      "designation": "Solution Architect"
+    },
+    {
+      "name": "Krishna Kanth",
+      "city": "Hyderabad",
+      "country": "India",
+      "imageUrl": "../../images/img3.jpg",
+      "designation": "Tech Lead"
+    },
+    {
+      "name": "Naresh",
+      "city": "Hyderabad",
+      "country": "India",
+      "imageUrl": "../../images/img4.jpg",
+      "designation": "Senior Visual Engineer"
+    },
+    {
+      "name": "Srikanth",
+      "city": "Hyderabad",
+      "country": "India",
+      "imageUrl": "../../images/img5.jpg",
+      "designation": "Visual Engineer"
+    },
+    {
+      "name": "Berglunds snabbköp",
+      "city": "Luleå",
+      "country": "Sweden"
+    },
+    {
+      "name": "Blauer See Delikatessen",
+      "city": "Mannheim",
+      "country": "Germany"
+    },
+    {
+      "name": "Blondel père et fils",
+      "city": "Strasbourg",
+      "country": "France"
+    },
+    {
+      "name": "Bólido Comidas preparadas",
+      "city": "Madrid",
+      "country": "Spain"
+    },
+    {
+      "name": "Bon app'",
+      "city": "Marseille",
+      "country": "France"
+    },
+    {
+      "name": "Bottom-Dollar Marketse",
+      "city": "Tsawassen",
+      "country": "Canada"
+    },
+    {
+      "name": "Cactus Comidas para llevar",
+      "city": "Buenos Aires",
+      "country": "Argentina"
+    },
+    {
+      "name": "Centro comercial Moctezuma",
+      "city": "México D.F.",
+      "country": "Mexico"
+    },
+    {
+      "name": "Chop-suey Chinese",
+      "city": "Bern",
+      "country": "Switzerland"
+    },
+    {
+      "name": "Comércio Mineiro",
+      "city": "São Paulo",
+      "country": "Brazil"
+    }
+  ]
+}

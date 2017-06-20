@@ -1,0 +1,129 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        Form
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address:</label>
+                            <input type="email" class="form-control" name="email" id="email" [(ngModel)]="user.email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" name="password" id="password" [(ngModel)]="user.password">
+                        </div>
+                        <button type="submit" class="btn btn-default" (click)="btnSubmit()">Submit</button>
+                        <p *ngIf="showForm">
+                            Email : {{user.email}}
+                            Password : {{user.password}}
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        Nghidden
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li *ngFor='let name of names' class="list-group-item">
+                            <span [hidden]="name.name.length===6">
+                                {{name.name | uppercase}}
+                            </span>
+                        </li>
+                    </ul>
+                    <p [hidden]="hideElement">
+                        I am using hidden attribute.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        src
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <img [src]="imageurl">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        ngModel
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <input class="form-control" [(ngModel)]="txt" /><br />
+                    <span class="badge">{{txt}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        Ngfor
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li *ngFor='let name of names' class="list-group-item" [ngClass]="{'text-danger':name.no===1 , 'text-success':name.no===2,'text-primary':name.no===3,'text-warning':name.no===4}">{{name.name | uppercase}} </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        Ngif
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-condensed table-hover table-striped">
+                        <tr *ngFor="let tblItem of tblItems;let x=index;">
+                            <ng-container *ngIf="tblItem.gender==='male' || tblItem.gender==='female' && tblItem.company==='Amazon'">
+                                <td>{{x+1}}</td>
+                                <td>{{tblItem.name}}</td>
+                                <td>{{tblItem.gender |uppercase}}</td>
+                                <td>{{tblItem.company}}</td>
+                            </ng-container>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        click and href
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <button (click)="hello()" class="btn btn-sm btn-primary">Click</button>
+                    <a [href]="angularDocsUrl" target="_blank">Google.com</a>
+                </div>
+            </div>
+        </div>
+    </div></div>

@@ -1,0 +1,24 @@
+﻿{
+  "data": [
+    {
+      "id": 1,
+      "name": "Krishna",
+      "remunation" :  30000
+    },
+    {
+      "id": 2,
+      "name": "Srikanth",
+      "remunation": 7000888
+    },
+    {
+      "id": 3,
+      "name": "Rakesh",
+      "remunation": 40000
+    },
+    {
+      "id": 4,
+      "name": "Naresh",
+      "remunation": 80000
+    }
+  ]
+}

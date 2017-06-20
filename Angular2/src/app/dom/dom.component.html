@@ -1,0 +1,33 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Toggle</h4>
+                </div>
+                <div class="panel-body">
+                    <!--<button type="button" (click)="toggleClick()" class="btn btn-primary btn-md">Toggle <i class="fa fa-chevron-up" [hidden]="hideElement"></i> <i class="fa fa-chevron-down" [hidden]="hideElement1"></i></button>
+                    <div *ngIf="toggle">
+                        News
+                    </div>-->
+                    <button type="button" (click)="userinfoToggle($event)" class="btn btn-primary btn-md">
+                        Toggle
+                        <i ng-class="{'fa fa-chevron-up':userinfoHide==true,
+                                        'fa fa-chevron-down':userinfoHide===false || userinfoHide===undefined}">
+                        </i>
+                    </button>
+                    <div *ngIf="userinfoHide">
+                        News
+                    </div>
+                    <!--<a href="javascript:void(0);" ng-click="headCtrlVm.userinfoToggle($event)">
+                        <img src="../../../images/UserImg.jpg" />
+                        <i class="profile-Icon" ng-class="{'unityHP-icon-icon_profile_drop_active':headCtrlVm.userinfoHide==true,
+                                        'unityHP-icon-icon_profile_drop':headCtrlVm.userinfoHide===false || headCtrlVm.userinfoHide===undefined}">
+                        </i>
+                    </a>
+                    <user-info ng-if="headCtrlVm.userinfoHide"></user-info>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

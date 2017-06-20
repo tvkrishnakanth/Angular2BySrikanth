@@ -1,0 +1,30 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        {{title}}
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item" [class.active]="hero === selectedHero" (click)="onSelect(hero)" *ngFor="let hero of heroes">
+                                <span>{{hero.id}}</span> {{hero.name}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <hero-detail [myname]="selectedHero"></hero-detail>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+Copyright 2017 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

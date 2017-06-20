@@ -1,0 +1,52 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        {{team}}
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-3" *ngFor="let team of teams">
+                        <ng-container *ngIf="team.country==='India'">
+                            <div class="box">
+                                <div>
+                                    <h3 class="section-title">{{team.name}}</h3>
+                                    <img [src]="team.imageUrl" />
+                                    <h3 class="section-title">{{team.designation}}</h3>
+                                </div>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        {{text}}
+                    </h4>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-condensed table-hover table-striped">
+                        <tr *ngFor="let team of teams;let x=index;">
+                            <ng-container>
+                                <td>{{x+1}}</td>
+                                <td>{{team.name}}</td>
+                                <td>{{team.city}}</td>
+                                <td>{{team.country}}</td>
+                            </ng-container>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
