@@ -8134,16 +8134,6 @@
     <Content Include="src\app\header\header.html" />
     <Content Include="src\app\dom\dom.component.html" />
     <Content Include="src\app\toh\hero-list.component.html" />
-    <Content Include="src\images\img1.jpg" />
-    <Content Include="src\images\img10.jpg" />
-    <Content Include="src\images\img2.jpg" />
-    <Content Include="src\images\img3.jpg" />
-    <Content Include="src\images\img4.jpg" />
-    <Content Include="src\images\img5.jpg" />
-    <Content Include="src\images\img6.jpg" />
-    <Content Include="src\images\img7.jpg" />
-    <Content Include="src\images\img8.jpg" />
-    <Content Include="src\images\img9.jpg" />
     <Content Include="src\tsconfig.json" />
     <Content Include="bs-config.json" />
     <Content Include="package.json" />
@@ -13420,6 +13410,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
