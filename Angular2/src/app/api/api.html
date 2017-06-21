@@ -1,12 +1,11 @@
 ﻿<div class="container">
     <h1>Api Page</h1>
-    <h2>{{text}}</h2>
-    <table class="table table-bordered">
-        <tr *ngFor="let tbl of tblItems">
-            <td>{{tbl.region}}</td>
-            <td>{{tbl.layout}}</td>
-            <td>{{tbl.firm}}</td>
-            <td>{{tbl.createdBy}}</td>
+    <table>
+        <tr class="table table-bordered" *ngFor="let tbl of tblItems">
+            <td>{{tbl.birth_year}}</td>
+            <td>{{tbl.created}}</td>
+            <td>{{tbl.edited}}</td>
+            <td>{{tbl.eye_color}}</td>
         </tr>
     </table>
 </div>
