@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
-  // template: `<team-members></team-members><hero-list></hero-list>`,
-  template: `<header></header>`
+  templateUrl: "./header/header.html",
  
 })
 export class AppComponent { }

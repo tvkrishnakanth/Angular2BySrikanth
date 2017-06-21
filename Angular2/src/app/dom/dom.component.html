@@ -6,26 +6,51 @@
                     <h4 class="panel-title">Toggle</h4>
                 </div>
                 <div class="panel-body">
-                    <!--<button type="button" (click)="toggleClick()" class="btn btn-primary btn-md">Toggle <i class="fa fa-chevron-up" [hidden]="hideElement"></i> <i class="fa fa-chevron-down" [hidden]="hideElement1"></i></button>
-                    <div *ngIf="toggle">
-                        News
-                    </div>-->
-                    <button type="button" (click)="userinfoToggle($event)" class="btn btn-primary btn-md">
-                        Toggle
-                        <i ng-class="{'fa fa-chevron-up':userinfoHide==true,
-                                        'fa fa-chevron-down':userinfoHide===false || userinfoHide===undefined}">
+                    <button type="button" (click)="userinfoToggle($event)" class="btn btn-default btn-md">
+                        <span [ngClass]="{'text-success':userinfoHide==true,'text-danger':userinfoHide==false || userinfoHide===undefined}">Toggle</span>
+                        <i [ngClass]="{'fa fa-chevron-down':userinfoHide==true,
+                                        'fa fa-chevron-up':userinfoHide===false || userinfoHide===undefined}">
                         </i>
                     </button>
                     <div *ngIf="userinfoHide">
                         News
                     </div>
-                    <!--<a href="javascript:void(0);" ng-click="headCtrlVm.userinfoToggle($event)">
-                        <img src="../../../images/UserImg.jpg" />
-                        <i class="profile-Icon" ng-class="{'unityHP-icon-icon_profile_drop_active':headCtrlVm.userinfoHide==true,
-                                        'unityHP-icon-icon_profile_drop':headCtrlVm.userinfoHide===false || headCtrlVm.userinfoHide===undefined}">
-                        </i>
-                    </a>
-                    <user-info ng-if="headCtrlVm.userinfoHide"></user-info>-->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Accordion</h4>
+                </div>
+                <div class="panel-body">
+                    <div class="tabs">
+                        <h4 (click)="toggle('home')">Home <i [ngClass]="{'fa fa-chevron-up':home==true,'fa fa-chevron-down':home==false ||home===undefined}"></i></h4>
+                        <div *ngIf="home" class="tab-body">
+                           Section1
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <h4 (click)="toggle('about')">About <i [ngClass]="{'fa fa-chevron-up':about==true,'fa fa-chevron-down':about==false ||about===undefined}"></i></h4>
+                        <div *ngIf="about" class="tab-body">
+                            Section2
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <h4 (click)="toggle('news')">News <i [ngClass]="{'fa fa-chevron-up':news==true,'fa fa-chevron-down':news==false ||news===undefined}"></i></h4>
+                        <div *ngIf="news" class="tab-body">
+                            Section3
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="panel panel-primary" *ngFor="let panel of panelItems ">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" (click)="selectedPanel(this)">{{panel.name}} <i [ngClass]="{'fa fa-chevron-up':heading==true,'fa fa-chevron-down':heading==false ||heading===undefined}"></i></h4>
+                        </div>
+                        <div class="panel-body" *ngIf="panel.name">
+                            {{panel.content}}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

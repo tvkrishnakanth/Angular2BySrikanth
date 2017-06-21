@@ -21,8 +21,8 @@
     "lint": "tslint ./src/**/*.ts -t verbose"
   },
   "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "author": "Srikanth Machineni",
+  "license": "Srikanth",
   "dependencies": {
     "@angular/common": "~4.0.0",
     "@angular/compiler": "~4.0.0",

@@ -11,6 +11,8 @@ var hero_list_component_1 = require("./toh/hero-list.component");
 var teamMembers_component_1 = require("./teamMembers/teamMembers.component");
 var directive_component_1 = require("./directive/directive.component");
 var dom_component_1 = require("./dom/dom.component");
+var api_component_1 = require("./api/api.component");
+var alerts_component_1 = require("./alerts/alerts.component");
 var routes = [
     {
         path: '',
@@ -32,6 +34,14 @@ var routes = [
     {
         path: 'dom',
         component: dom_component_1.DomComponent
+    },
+    {
+        path: 'api',
+        component: api_component_1.ApiComponent
+    },
+    {
+        path: 'alert',
+        component: alerts_component_1.AlertComponent
     }
 ];
 var AppRoutingModule = (function () {

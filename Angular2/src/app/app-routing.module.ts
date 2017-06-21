@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HeroListComponent } from './toh/hero-list.component';
-import { HeaderComponent } from './header/header.component';
 import { TeamMembersComponent } from './teamMembers/teamMembers.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { DomComponent } from './dom/dom.component';
+import { ApiComponent } from './api/api.component';
+import { AlertComponent } from './alerts/alerts.component';
 const routes: Routes = [
     {
         path: '',
@@ -27,6 +28,14 @@ const routes: Routes = [
     {
         path: 'dom',
         component: DomComponent
+    },
+    {
+        path: 'api',
+        component: ApiComponent
+    },
+    {
+        path: 'alert',
+        component: AlertComponent
     }
 ];
 

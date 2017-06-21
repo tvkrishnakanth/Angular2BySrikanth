@@ -15,11 +15,13 @@ var default_request_options_service_1 = require("./default-request-options.servi
 var app_component_1 = require("./app.component");
 var hero_list_component_1 = require("./toh/hero-list.component");
 var hero_detail_component_1 = require("./toh/hero-detail.component");
-var header_component_1 = require("./header/header.component");
+//import { HeaderComponent } from './header/header.component';
 var teamMembers_component_1 = require("./teamMembers/teamMembers.component");
 var directive_component_1 = require("./directive/directive.component");
 var app_routing_module_1 = require("./app-routing.module");
 var dom_component_1 = require("./dom/dom.component");
+var api_component_1 = require("./api/api.component");
+var alerts_component_1 = require("./alerts/alerts.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -38,12 +40,13 @@ AppModule = __decorate([
         exports: [router_1.RouterModule],
         declarations: [
             app_component_1.AppComponent,
-            header_component_1.HeaderComponent,
             directive_component_1.DirectiveComponent,
             teamMembers_component_1.TeamMembersComponent,
             hero_detail_component_1.HeroDetailComponent,
             hero_list_component_1.HeroListComponent,
-            dom_component_1.DomComponent
+            dom_component_1.DomComponent,
+            api_component_1.ApiComponent,
+            alerts_component_1.AlertComponent
         ],
         providers: [default_request_options_service_1.requestOptionsProvider],
         bootstrap: [app_component_1.AppComponent]

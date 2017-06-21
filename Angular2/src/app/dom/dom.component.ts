@@ -6,13 +6,49 @@ import { BrowserModule } from '@angular/platform-browser';
 
 })
 export class DomComponent {
-    //toggle: any;
-    //hideElement = true;
-    //hideElement1 = false;
+    userinfoHide: boolean;
+    panelName: any;
+    home: any;
+    about: any;
+    news: any;
     userinfoToggle = () => {
         this.userinfoHide = !this.userinfoHide;
-        //this.toggle = !this.toggle;
-        //this.hideElement = !this.hideElement;
-        //this.hideElement1 = !this.hideElement1;
+    }
+
+    toggle = (panelName: any) => {
+        if (panelName === "home") {
+            this.home = !this.home;
+            this.about = false;
+            this.news = false;
+        } else if (panelName === "about") {
+            this.about = !this.about;
+            this.home = false;
+            this.news = false;
+        } else if (panelName === "news") {
+            this.news = !this.news;
+            this.home = false;
+            this.about = false;
+        }
+    }
+    panelItems = [
+        {
+            id: 1,
+            name: "Heading1",
+            content: "Heading Body1"
+        },
+        {
+            id: 2,
+            name: "Heading2",
+            content: "Heading Body2"
+        },
+        {
+            id: 3,
+            name: "Heading3",
+            content: "Heading Body3"
+        }
+    ];
+    selectedPanel = (accordionPanel: any) => {
+        console.log(accordionPanel);
+        accordionPanel.collapsable = !accordionPanel.collapsable;
     }
 }
