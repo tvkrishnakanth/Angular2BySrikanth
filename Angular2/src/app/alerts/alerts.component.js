@@ -13,6 +13,7 @@ var http_1 = require("@angular/http");
 var Observable_1 = require("rxjs/Observable");
 require("rxjs/add/operator/map");
 var AlertService = (function () {
+    //constructor...
     function AlertService(http) {
         this.http = http;
         this.usersUrl = 'https://sdeloittenetalerts.deloitte.com/api/alerts/HomePage/smachineni';
