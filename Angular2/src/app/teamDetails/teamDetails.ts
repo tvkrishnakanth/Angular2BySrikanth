@@ -1,9 +1,8 @@
-﻿export class API {
+export class TeamDetails {
     constructor(
-        public birth_year: number,
-        public created: number,
-        public edited: number,
-        public edieye_colorted: string
+        public id: number,
+        public name: string,
+        public imageUrl: string
     ) { }
 }
 

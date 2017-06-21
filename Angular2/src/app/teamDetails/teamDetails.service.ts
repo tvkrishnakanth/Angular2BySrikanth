@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 
-import { Hero } from './hero';
-import { HeroData } from './hero-data';
+import { TeamDetails } from './teamDetails';
+import { TeamData } from './teamDetails-data';
 
 @Injectable()
-export class HeroService {
-    getHeroes(): Promise<Hero[]> {
-        return Promise.resolve(HeroData);
+export class TeamDetailService {
+    getHeroes(): Promise<TeamDetails[]> {
+        return Promise.resolve(TeamData);
     }
 
     // See the "Take it slow" appendix
-    getHeroesSlowly(): Promise<Hero[]> {
+    getHeroesSlowly(): Promise<TeamDetails[]> {
         return new Promise(resolve => {
             // Simulate server latency with 2 second delay
             setTimeout(() => resolve(this.getHeroes()), 2000);

@@ -9,26 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var hero_1 = require("./hero");
-var HeroDetailComponent = (function () {
-    function HeroDetailComponent() {
+var teamDetails_1 = require("./teamDetails");
+var TeamDetailComponent = (function () {
+    function TeamDetailComponent() {
     }
-    return HeroDetailComponent;
+    return TeamDetailComponent;
 }());
 __decorate([
     core_1.Input(),
-    __metadata("design:type", hero_1.Hero)
-], HeroDetailComponent.prototype, "myname", void 0);
-HeroDetailComponent = __decorate([
+    __metadata("design:type", teamDetails_1.TeamDetails)
+], TeamDetailComponent.prototype, "myname", void 0);
+TeamDetailComponent = __decorate([
     core_1.Component({
-        selector: 'hero-detail',
+        selector: 'team-detail',
         template: "\n    <div *ngIf=\"myname\">\n      <h2>{{myname.name}} details!</h2>\n      <div>\n        <label>id: </label>{{myname.id}}\n      </div>\n      <div>\n        <label>name: </label>\n        <input [(ngModel)]=\"myname.name\" class=\"form-control\"/>\n      </div>\n        <div class=\"jsonimg\">\n        <img src=\"{{myname.imageUrl}}\"/>\n        </div>\n    </div>\n  "
     })
-], HeroDetailComponent);
-exports.HeroDetailComponent = HeroDetailComponent;
+], TeamDetailComponent);
+exports.TeamDetailComponent = TeamDetailComponent;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
 */ 
-//# sourceMappingURL=hero-detail.component.js.map
+//# sourceMappingURL=teamDetails.component.js.map

@@ -10,8 +10,9 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { requestOptionsProvider } from './default-request-options.service';
 
 import { AppComponent } from './app.component';
-import { HeroListComponent } from './toh/hero-list.component';
-import { HeroDetailComponent } from './toh/hero-detail.component';
+import { TeamListComponent } from './teamDetails/teamList.component';
+import { TeamDetailComponent } from './teamDetails/teamDetails.component';
+//import { HeroDetailComponent } from './toh/hero-detail.component';
 //import { HeaderComponent } from './header/header.component';
 import { TeamMembersComponent } from './teamMembers/teamMembers.component';
 import { DirectiveComponent } from './directive/directive.component';
@@ -34,8 +35,8 @@ import { AlertComponent } from './alerts/alerts.component';
         AppComponent,
         DirectiveComponent,
         TeamMembersComponent,
-        HeroDetailComponent,
-        HeroListComponent,
+        TeamDetailComponent,
+        TeamListComponent,
         DomComponent,
         ApiComponent,
         AlertComponent 

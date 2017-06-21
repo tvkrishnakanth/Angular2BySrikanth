@@ -6,30 +6,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var hero_data_1 = require("./hero-data");
-var HeroService = (function () {
-    function HeroService() {
+var teamDetails_data_1 = require("./teamDetails-data");
+var TeamDetailService = (function () {
+    function TeamDetailService() {
     }
-    HeroService.prototype.getHeroes = function () {
-        return Promise.resolve(hero_data_1.HeroData);
+    TeamDetailService.prototype.getHeroes = function () {
+        return Promise.resolve(teamDetails_data_1.TeamData);
     };
     // See the "Take it slow" appendix
-    HeroService.prototype.getHeroesSlowly = function () {
+    TeamDetailService.prototype.getHeroesSlowly = function () {
         var _this = this;
         return new Promise(function (resolve) {
             // Simulate server latency with 2 second delay
             setTimeout(function () { return resolve(_this.getHeroes()); }, 2000);
         });
     };
-    return HeroService;
+    return TeamDetailService;
 }());
-HeroService = __decorate([
+TeamDetailService = __decorate([
     core_1.Injectable()
-], HeroService);
-exports.HeroService = HeroService;
+], TeamDetailService);
+exports.TeamDetailService = TeamDetailService;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
 */ 
-//# sourceMappingURL=hero.service.js.map
+//# sourceMappingURL=teamDetails.service.js.map

@@ -7,7 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
-var hero_list_component_1 = require("./toh/hero-list.component");
+var teamList_component_1 = require("./teamDetails/teamList.component");
 var teamMembers_component_1 = require("./teamMembers/teamMembers.component");
 var directive_component_1 = require("./directive/directive.component");
 var dom_component_1 = require("./dom/dom.component");
@@ -24,8 +24,8 @@ var routes = [
         component: directive_component_1.DirectiveComponent
     },
     {
-        path: 'json',
-        component: hero_list_component_1.HeroListComponent
+        path: 'teamDetails',
+        component: teamList_component_1.TeamListComponent
     },
     {
         path: 'team',

@@ -10,37 +10,37 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 // Observable Version
 var core_1 = require("@angular/core");
-var hero_service_1 = require("./hero.service");
-var HeroListComponent = (function () {
-    function HeroListComponent(heroService) {
-        this.heroService = heroService;
+var teamDetails_service_1 = require("./teamDetails.service");
+var TeamListComponent = (function () {
+    function TeamListComponent(TeamDetailService) {
+        this.TeamDetailService = TeamDetailService;
         this.title = 'Unity';
     }
-    HeroListComponent.prototype.getHeroes = function () {
+    TeamListComponent.prototype.getHeroes = function () {
         var _this = this;
-        this.heroService.getHeroes().then(function (heroes) { return _this.heroes = heroes; });
+        this.TeamDetailService.getHeroes().then(function (heroes) { return _this.heroes = heroes; });
     };
-    HeroListComponent.prototype.ngOnInit = function () {
+    TeamListComponent.prototype.ngOnInit = function () {
         this.getHeroes();
     };
-    HeroListComponent.prototype.onSelect = function (hero) {
-        this.selectedHero = hero;
+    TeamListComponent.prototype.onSelect = function (TeamDetails) {
+        this.selectedHero = TeamDetails;
     };
-    return HeroListComponent;
+    return TeamListComponent;
 }());
-HeroListComponent = __decorate([
+TeamListComponent = __decorate([
     core_1.Component({
-        selector: 'hero-list',
-        templateUrl: './hero-list.component.html',
-        providers: [hero_service_1.HeroService],
+        selector: 'team-list',
+        templateUrl: './teamDetails.component.html',
+        providers: [teamDetails_service_1.TeamDetailService],
         styles: ['.error {color:red;}']
     }),
-    __metadata("design:paramtypes", [hero_service_1.HeroService])
-], HeroListComponent);
-exports.HeroListComponent = HeroListComponent;
+    __metadata("design:paramtypes", [teamDetails_service_1.TeamDetailService])
+], TeamListComponent);
+exports.TeamListComponent = TeamListComponent;
 /*
 Copyright 2017 Google Inc. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at http://angular.io/license
 */ 
-//# sourceMappingURL=hero-list.component.js.map
+//# sourceMappingURL=teamList.component.js.map

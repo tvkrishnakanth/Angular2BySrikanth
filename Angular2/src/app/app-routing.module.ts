@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HeroListComponent } from './toh/hero-list.component';
+import { TeamListComponent } from './teamDetails/teamList.component';
 import { TeamMembersComponent } from './teamMembers/teamMembers.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { DomComponent } from './dom/dom.component';
@@ -18,8 +18,8 @@ const routes: Routes = [
         component: DirectiveComponent 
     },
     {
-        path: 'json',
-        component: HeroListComponent
+        path: 'teamDetails',
+        component: TeamListComponent
     },
     {
         path: 'team',

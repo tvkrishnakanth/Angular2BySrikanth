@@ -13,8 +13,9 @@ var router_1 = require("@angular/router");
 //import { HeroData } from './hero-data';
 var default_request_options_service_1 = require("./default-request-options.service");
 var app_component_1 = require("./app.component");
-var hero_list_component_1 = require("./toh/hero-list.component");
-var hero_detail_component_1 = require("./toh/hero-detail.component");
+var teamList_component_1 = require("./teamDetails/teamList.component");
+var teamDetails_component_1 = require("./teamDetails/teamDetails.component");
+//import { HeroDetailComponent } from './toh/hero-detail.component';
 //import { HeaderComponent } from './header/header.component';
 var teamMembers_component_1 = require("./teamMembers/teamMembers.component");
 var directive_component_1 = require("./directive/directive.component");
@@ -42,8 +43,8 @@ AppModule = __decorate([
             app_component_1.AppComponent,
             directive_component_1.DirectiveComponent,
             teamMembers_component_1.TeamMembersComponent,
-            hero_detail_component_1.HeroDetailComponent,
-            hero_list_component_1.HeroListComponent,
+            teamDetails_component_1.TeamDetailComponent,
+            teamList_component_1.TeamListComponent,
             dom_component_1.DomComponent,
             api_component_1.ApiComponent,
             alerts_component_1.AlertComponent
